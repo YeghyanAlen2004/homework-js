@@ -13,3 +13,5 @@ function sumOfArray(arr)
 let arr = [50, 75, 100];
 
 console.log(sumOfArray(arr));
+let sum = arr.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);

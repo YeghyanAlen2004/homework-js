@@ -3,11 +3,11 @@ function contactArray(arr1, arr2)
     arr3 = [];
     for(let i = 0; arr1[i] != undefined; ++i)
     {
-        arr3 += arr1[i];
+        arr3.push(arr1[i]);
     }
     for(let i = 0; arr2[i] != undefined; ++i)
     {
-        arr3 += arr2[i];
+        arr3.push(arr2[i]);
     }
 
     return arr3;
