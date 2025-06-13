@@ -1,4 +1,4 @@
-let my_fun = function(element) {
+let my_fun = function(element, i, arr) {
     if (element >= 4) {
         return element;
     }
@@ -7,8 +7,8 @@ let my_fun = function(element) {
 function my_filter(arr, fun, size){
     let res = [];
     for (let i = 0; i < size; ++i) {
-        if (my_fun(arr[i]) !== undefined){
-        res.push(my_fun(arr[i]));
+        if (fun(arr[i], i, arr) !== undefined){
+        res.push(fun(arr[i]));
         }
     } 
 
